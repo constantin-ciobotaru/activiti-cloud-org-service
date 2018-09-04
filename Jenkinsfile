@@ -67,7 +67,7 @@ pipeline {
       }
       stage('Promote to Environments') {
         when {
-          branch 'master'
+          branch 'develop'
         }
         steps {
           dir ('./charts/activiti-cloud-org-service') {
