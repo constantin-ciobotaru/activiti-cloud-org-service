@@ -38,11 +38,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @SpringBootApplication
 public class OrganizationJpaApplication {
 
-    @Bean
-    public AuditorAware<String> auditorAware() {
-        return new AuditorAwareImpl();
-    }
-
     public static void main(String[] args) {
         SpringApplication.run(OrganizationJpaApplication.class,
                               args);
